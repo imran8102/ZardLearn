@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/vazir-font/Vazir.woff2") format("woff2"),
+        url("../fonts/vazir-font/Vazir.woff") format("woff"),
+        url("../fonts/vazir-font/Vazir.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/vazir-font/Vazir-Bold.woff2") format("woff2"),
+        url("../fonts/vazir-font/Vazir-Bold.woff") format("woff"),
+        url("../fonts/vazir-font/Vazir-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/vazir-font/Vazir-Light.woff2") format("woff2"),
+        url("../fonts/vazir-font/Vazir-Light.woff") format("woff"),
+        url("../fonts/vazir-font/Vazir-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@theme {
+    --font-vazir: Vazir, sans-serif;
+
+    --color-primary: #E0C56A;
+    --color-surface: #F3F4F6;
+}

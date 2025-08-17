@@ -31,6 +31,23 @@
 @theme {
     --font-vazir: Vazir, sans-serif;
 
-    --color-primary: #E0C56A;
+    --color-primary: #FFD700;
     --color-surface: #F3F4F6;
+
+    --spacing-13 : 3.25rem;
+    --spacing-18 : 4.5rem;
+}
+
+@layer base {
+  input[type="search"]::-webkit-search-cancel-button {
+    @apply hidden;
+  }
+
+  input::-ms-clear {
+    @apply hidden;
+  }
+
+  input::-webkit-clear-button {
+    @apply hidden;
+  }
 }

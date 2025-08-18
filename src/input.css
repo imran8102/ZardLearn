@@ -32,10 +32,11 @@
     --font-vazir: Vazir, sans-serif;
 
     --color-primary: #FFD700;
-    --color-surface: #F3F4F6;
+    --color-surface: #f3f4f6;
 
     --spacing-13 : 3.25rem;
     --spacing-18 : 4.5rem;
+    --spacing-42 : 10.5rem;
 }
 
 @layer base {

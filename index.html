@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa-IR">
 
 <head>
     <meta charset="UTF-8">
@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body dir="rtl">
-    <div class="offer w-full h-24 bg-yellow-500 flex items-center px-14 lg:px-8 font-bold gap-x-4 text-white">
+<body dir="rtl" class="bg-surface">
+    <!-- offer section -->
+    <div class="offer h-24 bg-yellow-500 flex items-center px-14 lg:px-8 font-bold gap-x-4 text-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14">
             <path fill="currentColor" fill-rule="evenodd"
                 d="M6.203 1.533a1.26 1.26 0 0 1 1.594 0l.331.27c.138.112.318.16.494.132l.422-.068a1.26 1.26 0 0 1 1.38.797l.152.4a.63.63 0 0 0 .36.36l.4.153c.56.213.892.789.797 1.38l-.068.421a.63.63 0 0 0 .132.494l.27.331c.377.464.377 1.13 0 1.594l-.27.331a.63.63 0 0 0-.132.494l.068.422a1.26 1.26 0 0 1-.797 1.38l-.4.152a.63.63 0 0 0-.36.36l-.153.4c-.213.56-.789.892-1.38.797l-.421-.068a.63.63 0 0 0-.494.132l-.331.27a1.26 1.26 0 0 1-1.594 0l-.331-.27a.63.63 0 0 0-.494-.132l-.422.068a1.26 1.26 0 0 1-1.38-.797l-.152-.4a.63.63 0 0 0-.36-.36l-.4-.153a1.26 1.26 0 0 1-.797-1.38l.068-.421a.63.63 0 0 0-.132-.494l-.27-.331a1.26 1.26 0 0 1 0-1.594l.27-.331a.63.63 0 0 0 .132-.494l-.068-.422a1.26 1.26 0 0 1 .797-1.38l.4-.152a.63.63 0 0 0 .36-.36l.153-.4c.213-.56.789-.892 1.38-.797l.421.068a.63.63 0 0 0 .494-.132zm2.382-.97a2.51 2.51 0 0 0-3.17 0L5.3.656L5.155.633a2.51 2.51 0 0 0-2.746 1.586l-.053.137l-.137.053A2.51 2.51 0 0 0 .633 5.155l.023.145l-.093.115a2.51 2.51 0 0 0 0 3.17l.093.115l-.023.145a2.51 2.51 0 0 0 1.586 2.746l.137.053l.053.138a2.51 2.51 0 0 0 2.746 1.585l.145-.023l.115.093a2.51 2.51 0 0 0 3.17 0l.115-.093l.145.023a2.51 2.51 0 0 0 2.746-1.585l.053-.138l.138-.053a2.51 2.51 0 0 0 1.585-2.746l-.023-.145l.093-.115a2.51 2.51 0 0 0 0-3.17l-.093-.115l.023-.145a2.51 2.51 0 0 0-1.585-2.746l-.138-.053l-.053-.137A2.51 2.51 0 0 0 8.845.633L8.7.656zm1.357 4.379a.625.625 0 0 0-.884-.884l-5 5a.625.625 0 1 0 .884.884zM5 3.875a1.125 1.125 0 1 0 0 2.25a1.125 1.125 0 0 0 0-2.25M7.875 9a1.125 1.125 0 1 1 2.25 0a1.125 1.125 0 0 1-2.25 0"
                 clip-rule="evenodd" />
         </svg> <span class="text-lg">۲۰۰ هزار تومان تخفیف ویژه اولین خرید از زردلرن، کد تخفیف: off200t</span>
     </div>
-    <header
-        class="relative flex flex-col items-center text-white py-3 h-[700px] bg-[url(/images/hero-section.webp)] bg-cover bg-no-repeat bg-center">
+
+    <!-- Header section -->
+    <header class="relative flex flex-col items-center text-white py-3 h-[700px] bg-[url(/images/hero-section.webp)] bg-cover bg-no-repeat bg-center">
+        <!-- navbar section -->
         <nav class="px-2.5 flex justify-between items-center w-full max-w-[1280px]">
             <div class="nav-right">
                 <ul class="nav-menu flex items-center gap-x-8 ">
@@ -76,14 +79,15 @@
                 </ul>
             </div>
         </nav>
+
         <div class="container mt-12">
             <section class="flex flex-col items-center justify-center space-y-9">
-                <h3 class="text-4xl font-black">زردلرن، اولین گام برنامه‌نویس شدن</h3>
-                <p>با آکادمی خصوصی زردلرن، علم برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن</p>
-                <form action="#"
-                    class="w-full max-w-4xl flex items-center justify-between pl-4 pr-6 h-18 bg-white rounded-full">
-                    <input type="search" class="grow outline-0 text-gray-500" placeholder="جستجو در بین دوره‌ها...">
-                    <button type="submit" class="flex justify-center items-center w-13 h-13 bg-yellow-500 rounded-full">
+                <h3 class="text-lg sm:text-[2.125rem]/[52px] font-black">زردلرن، اولین گام برنامه‌نویس شدن</h3>
+                <p class="text-xs sm:text-lg font-bold">با آکادمی خصوصی زردلرن، علم برنامه نویسی رو با خیال راحت یاد
+                    بگیر و پیشرفت کن</p>
+                <form action="#" class="w-full max-w-3xl flex items-center justify-between my-8 pl-4 pr-6 h-18 bg-white rounded-full">
+                    <input type="search" class="grow outline-0 text-gray-700 placeholder:text-gray-500" placeholder="جستجو در بین دوره‌ها...">
+                    <button type="submit" class="flex justify-center items-center w-13 h-13 bg-amber-500 rounded-full cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
@@ -109,12 +113,1236 @@
                 </div>
             </section>
         </div>
-       <svg class="absolute bottom-0" width="100" height="22" viewBox="0 0 100 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" fill="currentColor"></path>
+        <svg class="absolute bottom-0" width="100" height="22" viewBox="0 0 100 22" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" fill="currentColor"></path>
         </svg>
-        <svg class="absolute -bottom-2 mx-auto text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 8l8 8l8-8"/></svg>
+        <svg class="absolute -bottom-2 mx-auto text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m4 8l8 8l8-8" />
+        </svg>
     </header>
-    <br><br><br><br>
+
+    <div class="container max-w-4xl md:max-w-5xl lg:max-w-6xl  xl:max-w-7xl space-y-32 mt-32 flex flex-col items-center mx-auto">
+        <!-- latest Courses Section -->
+        <section class="w-full space-y-16">
+            <div class="flex justify-between">
+                <div class="space-y-4 inline-block">
+                    <h3
+                        class="relative inline-block text-gray-700 md:text-lg after:content-[''] after:absolute after:right-0 after:top-5 after:-z-10 after:w-[calc(100%+6px)] after:h-1/2 after:[clip-path:polygon(6px_0,100%_0,100%_100%,0_100%)] after:bg-yellow-300/40">
+                        آخـــرین دوره های ما</h3>
+                    <p class="text-xl md:text-2xl font-semibold">سکوی پرتاپ شما به سمت موفقیت</p>
+                </div>
+                <a href="#"
+                    class="flex gap-x-1 text-sm font-semibold text-gray-600 hover:text-amber-500 cursor-pointer mt-10 transition-colors duration-200 ease-out">همه
+                    دوره‌ها <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 21 21">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.5 13.5v-7h7m-7 0l8 8" stroke-width="1" />
+                    </svg></a>
+            </div>
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/cleanCode.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/docker.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/graphQL.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/leafletJs.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/linux.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/python-bot.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/nestJs.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/nodeJs.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/php.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/redis.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/threeJs.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/wordpress.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- roadmap section -->
+        <section class="w-full space-y-16">
+            <div class="space-y-4 inline-block">
+                <h3
+                    class="relative inline-block text-gray-700 md:text-lg after:content-[''] after:absolute after:right-0 after:top-5 after:-z-10 after:w-[calc(100%+6px)] after:h-1/2 after:[clip-path:polygon(6px_0,100%_0,100%_100%,0_100%)] after:bg-yellow-300/40">
+                    نقشه راه‌ها</h3>
+                <p class="text-xl md:text-2xl font-semibold">نقشه‌های راه برای شروع اصولی یادگیری</p>
+            </div>
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="roadmap-card col-span-1 w-full rounded-xl overflow-hidden pb-4 flex flex-col justify-center items-center bg-gradient-to-r from-[#FFB535] to-[#F2295B]">
+                    <a href="#" class="h-42 space-y-2 flex flex-col justify-center items-center text-white">
+                        <svg class="w-10 sm:w-12 h-10 sm:h-12" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M33 44.8125H15M33.1875 14.7188L36.8641 18.3866C37.962 19.4812 37.962 21.2558 36.8641 22.3504L33.1875 25.9688M15 14.7188L11.3234 18.3866C10.2255 19.4812 10.2255 21.2558 11.3234 22.3504L15 25.9688M21.9375 27.8438L26.25 12.8438M46.125 12.5625V27.9375C46.125 33.1151 41.9276 37.3125 36.75 37.3125H11.248C6.07144 37.3125 1.875 33.1161 1.875 27.9395V12.5625C1.875 7.38487 6.07237 3.1875 11.25 3.1875H36.75C41.9276 3.1875 46.125 7.38487 46.125 12.5625Z"
+                                stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <div class="flex flex-col gap-2 items-center">
+                            <h3 class="font-semibold sm:text-lg">فرانت اند</h3>
+                            <span class="text-sm sm:text-base font-medium">30 دوره</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="roadmap-card col-span-1 w-full rounded-xl overflow-hidden pb-4 flex flex-col justify-center items-center bg-gradient-to-r from-[#30C5E4] to-[#28E55D]">
+                    <a href="#" class="h-42 space-y-2 flex flex-col justify-center items-center text-white">
+                        <svg class="w-10 sm:w-12 h-10 sm:h-12" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M33 44.8125H15M33.1875 14.7188L36.8641 18.3866C37.962 19.4812 37.962 21.2558 36.8641 22.3504L33.1875 25.9688M15 14.7188L11.3234 18.3866C10.2255 19.4812 10.2255 21.2558 11.3234 22.3504L15 25.9688M21.9375 27.8438L26.25 12.8438M46.125 12.5625V27.9375C46.125 33.1151 41.9276 37.3125 36.75 37.3125H11.248C6.07144 37.3125 1.875 33.1161 1.875 27.9395V12.5625C1.875 7.38487 6.07237 3.1875 11.25 3.1875H36.75C41.9276 3.1875 46.125 7.38487 46.125 12.5625Z"
+                                stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <div class="flex flex-col gap-2 items-center">
+                            <h3 class="font-semibold sm:text-lg">امنیت</h3>
+                            <span class="text-sm sm:text-base font-medium">9 دوره</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="roadmap-card col-span-1 w-full rounded-xl overflow-hidden pb-4 flex flex-col justify-center items-center bg-gradient-to-r from-[#2E9EFF] to-[#9C33F7]">
+                    <a href="#" class="h-42 space-y-2 flex flex-col justify-center items-center text-white">
+                        <svg class="w-10 sm:w-12 h-10 sm:h-12" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M33 44.8125H15M33.1875 14.7188L36.8641 18.3866C37.962 19.4812 37.962 21.2558 36.8641 22.3504L33.1875 25.9688M15 14.7188L11.3234 18.3866C10.2255 19.4812 10.2255 21.2558 11.3234 22.3504L15 25.9688M21.9375 27.8438L26.25 12.8438M46.125 12.5625V27.9375C46.125 33.1151 41.9276 37.3125 36.75 37.3125H11.248C6.07144 37.3125 1.875 33.1161 1.875 27.9395V12.5625C1.875 7.38487 6.07237 3.1875 11.25 3.1875H36.75C41.9276 3.1875 46.125 7.38487 46.125 12.5625Z"
+                                stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <div class="flex flex-col gap-2 items-center">
+                            <h3 class="font-semibold sm:text-lg">پایتون</h3>
+                            <span class="text-sm sm:text-base font-medium">7 دوره</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="roadmap-card col-span-1 w-full rounded-xl overflow-hidden pb-4 flex flex-col justify-center items-center bg-gradient-to-r from-[#FF3571] to-[#880175]">
+                    <a href="#" class="h-42 space-y-2 flex flex-col justify-center items-center text-white">
+                        <svg class="w-10 sm:w-12 h-10 sm:h-12" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M33 44.8125H15M33.1875 14.7188L36.8641 18.3866C37.962 19.4812 37.962 21.2558 36.8641 22.3504L33.1875 25.9688M15 14.7188L11.3234 18.3866C10.2255 19.4812 10.2255 21.2558 11.3234 22.3504L15 25.9688M21.9375 27.8438L26.25 12.8438M46.125 12.5625V27.9375C46.125 33.1151 41.9276 37.3125 36.75 37.3125H11.248C6.07144 37.3125 1.875 33.1161 1.875 27.9395V12.5625C1.875 7.38487 6.07237 3.1875 11.25 3.1875H36.75C41.9276 3.1875 46.125 7.38487 46.125 12.5625Z"
+                                stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <div class="flex flex-col gap-2 items-center">
+                            <h3 class="font-semibold sm:text-lg">مهارت‌های نرم</h3>
+                            <span class="text-sm sm:text-base font-medium">9 دوره</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- popular courses section -->
+        <section class="w-full space-y-16">
+            <div class="flex justify-between">
+                <div class="space-y-4 inline-block">
+                    <h3 class="relative inline-block text-gray-700 md:text-lg after:content-[''] after:absolute after:right-0 after:top-5 after:-z-10 after:w-[calc(100%+6px)] after:h-1/2 after:[clip-path:polygon(6px_0,100%_0,100%_100%,0_100%)] after:bg-yellow-300/40">
+                        پرطرفدارترین دوره‌ها</h3>
+                    <p class="text-xl md:text-2xl font-semibold">دوره های محبوب و پروژه محور زردلرن</p>
+                </div>
+                <div class="flex gap-x-4">
+                    <button class="flex justify-center items-center size-13 rounded-full border-1 border-amber-500 hover:border-surface bg-surface hover:bg-amber-500 cursor-pointer group/chevron"><svg xmlns="http://www.w3.org/2000/svg" class="text-amber-500 group-hover/chevron:text-surface" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+                    <button class="flex justify-center items-center size-13 rounded-full border-1 border-amber-500 hover:border-surface bg-surface hover:bg-amber-500 cursor-pointer group/chevron"><svg xmlns="http://www.w3.org/2000/svg" class="text-amber-500 group-hover/chevron:text-surface" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6l6 6l1.41-1.41L10.83 12z"/></svg></button>
+                </div>
+            </div>
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/cleanCode.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/docker.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/graphQL.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/leafletJs.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section class="w-full space-y-16">
+            <div class="space-y-4 inline-block">
+                <h3
+                    class="relative inline-block text-gray-700 md:text-lg after:content-[''] after:absolute after:right-0 after:top-5 after:-z-10 after:w-[calc(100%+6px)] after:h-1/2 after:[clip-path:polygon(6px_0,100%_0,100%_100%,0_100%)] after:bg-yellow-300/40">
+                    ما چه کمکی میتونیم بهت بکنیم</h3>
+                <p class="text-xl md:text-2xl font-semibold">از شروع مسیر کنارتیم نمیذاریم آب تو دلت تکون بخوره</p>
+            </div>
+            <div class="w-full container grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7 mx-auto">
+                <div class="col-span-1 max-md:w-4/5 py-12 px-6 lg:py-5 lg:p-6 lg:pr-12 flex flex-col lg:flex-row items-center justify-center rounded-xl bg-white gap-4">
+                    <div class="relative before:bg-sky-50 before:content-[''] before:absolute before:w-13 before:h-24 before:rounded-full  before:top-0 before:-right-1/2 max-lg:before:w-24 max-lg:before:h-13 max-lg:before:-right-0 max-lg:before:-top-1/2">
+                        <svg class="relative w-[94px] h-13 lg:w-13 lg:h-[94px] text-sky-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24" d="M256 160c16-63.16 76.43-95.41 208-96a15.94 15.94 0 0 1 16 16v288a16 16 0 0 1-16 16c-128 0-177.45 25.81-208 64c-30.37-38-80-64-208-64c-9.88 0-16-8.05-16-17.93V80a15.94 15.94 0 0 1 16-16c131.57.59 192 32.84 208 96m0 0v288"/></svg>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="lg:text-lg font-bold">تضمین کامل ترین محتوا</h3>
+                        <p class="text-sm lg:text-base text-gray-700">بزار خیالت راحت کنم توی دوره هامون به ریز ترین موارد پرداختیم بعداز دیدن این دوره نیاز به هیچ آموزش دیگه ای نداری.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 max-md:w-4/5 py-12 px-6 lg:py-5 lg:p-6 lg:pr-12 flex flex-col lg:flex-row items-center justify-center rounded-xl bg-white gap-4">
+                    <div class="relative before:bg-amber-50 before:content-[''] before:absolute before:w-13 before:h-24 before:rounded-full  before:top-0 before:-right-1/2 max-lg:before:w-24 max-lg:before:h-13 max-lg:before:-right-0 max-lg:before:-top-1/2">
+                        <svg class="relative w-[94px] h-13 lg:w-13 lg:h-[94px] stroke-amber-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 24 24" stroke="#000000" aria-hidden="true" id="Chat-Bubble-Left-Right--Streamline-Heroicons-Outline"><path stroke-linecap="round" stroke-linejoin="round" d="M19.40625 8.156374999999999c0.8471666666666667 0.27216666666666667 1.4375 1.081 1.4375 2.009625v4.1074166666666665c0 1.0886666666666667 -0.8117083333333334 2.0125 -1.8975 2.1016250000000003 -0.32583333333333336 0.025875000000000002 -0.6516666666666667 0.049833333333333334 -0.9775 0.06899999999999999v2.9622083333333338l-2.875 -2.875c-1.2975833333333335 0 -2.58175 -0.052708333333333336 -3.8524999999999996 -0.15620833333333334a2.0268750000000004 2.0268750000000004 0 0 1 -0.790625 -0.23191666666666666m8.955625000000001 -7.98675a2.0374166666666667 2.0374166666666667 0 0 0 -0.45616666666666666 -0.09104166666666667 46.61333333333334 46.61333333333334 0 0 0 -7.712666666666667 0c-1.0838750000000001 0.09008333333333333 -1.8936666666666666 1.0129583333333334 -1.8936666666666666 2.100666666666667v4.1074166666666665c0 0.802125 0.44083333333333335 1.5141666666666669 1.106875 1.8697083333333335m8.955625000000001 -7.98675V6.360458333333333c0 -1.5534583333333334 -1.1039999999999999 -2.8999166666666665 -2.645 -3.1002083333333332A46.43604166666667 46.43604166666667 0 0 0 10.78125 2.875c-2.0268750000000004 0 -4.023083333333334 0.1312916666666667 -5.98 0.38525000000000004 -1.5410000000000001 0.20029166666666667 -2.645 1.54675 -2.645 3.1002083333333332v5.966583333333333c0 1.5534583333333334 1.1039999999999999 2.8999166666666665 2.645 3.1002083333333332 0.5529583333333333 0.071875 1.1087916666666668 0.13416666666666668 1.6675 0.18591666666666667V20.125l3.9818750000000005 -3.9818750000000005" stroke-width="1"></path></svg>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="lg:text-lg font-bold">پشتیبانی دائمی</h3>
+                        <p class="text-sm lg:text-base text-gray-700">هرجا سوالی داشتی به مشکل خوردی بچه های تیم آمادن که مشکلت رو حل کنن تلاشمون اینه بدون نگرانی دوره رو کامل کنی.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 max-md:w-4/5 py-12 px-6 lg:py-5 lg:p-6 lg:pr-12 flex flex-col lg:flex-row items-center justify-center rounded-xl bg-white gap-4">
+                    <div class="relative before:bg-green-50 before:content-[''] before:absolute before:w-13 before:h-24 before:rounded-full  before:top-0 before:-right-1/2 max-lg:before:w-24 max-lg:before:h-13 max-lg:before:-right-0 max-lg:before:-top-1/2">
+                        <svg class="relative w-[94px] h-13 lg:w-13 lg:h-[94px] text-green-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875zm6.75-4.5c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125zm6.75-4.5c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125z"/></svg>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="lg:text-lg font-bold">پروژه محور در راستای بازار کار</h3>
+                        <p class="text-sm lg:text-base text-gray-700">کل تمرکز ما رو این هستش بعداز تموم شدن دوره شخص بتونه با اعتماد به نفس کامل پروژه بزنه واقدام کنه برای کسب درآمد.</p>
+                    </div>
+                </div>
+                <div class="col-span-1 max-md:w-4/5 py-12 px-6 lg:py-5 lg:p-6 lg:pr-12 flex flex-col lg:flex-row items-center justify-center rounded-xl bg-white gap-4">
+                    <div class="relative before:bg-red-50 before:content-[''] before:absolute before:w-13 before:h-24 before:rounded-full before:top-0 before:-right-1/2 max-lg:before:w-24 max-lg:before:h-13 max-lg:before:-right-0 max-lg:before:-top-1/2">
+                        <svg class="relative w-[94px] h-13 lg:w-13 lg:h-[94px] text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11.35 3.836q-.099.316-.1.664c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75a2.3 2.3 0 0 0-.1-.664m-5.8 0A2.25 2.25 0 0 1 13.5 2.25H15a2.25 2.25 0 0 1 2.15 1.586m-5.8 0q-.563.035-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414q.564.035 1.124.08c1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5l3-3.75"/></svg>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="lg:text-lg font-bold">سراغ حرفه‌ای ها رفتیم</h3>
+                        <p class="text-sm lg:text-base text-gray-700">به جرعت میتونم بگم سخت گیرترین شرایط جذب مدرس داریم چون برامون مهمه محتوا خیلی ساده و روان بیان بشه که توی یادگیری به مشکل نخورید.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+        
+        <!-- latest courses section -->
+        <section class="w-full space-y-16">
+            <div class="flex justify-between">
+                <div class="space-y-4 inline-block">
+                    <h3 class="relative inline-block text-gray-700 md:text-lg after:content-[''] after:absolute after:right-0 after:top-5 after:-z-10 after:w-[calc(100%+6px)] after:h-1/2 after:[clip-path:polygon(6px_0,100%_0,100%_100%,0_100%)] after:bg-yellow-300/40">
+                        جدیدترین دوره‌ها</h3>
+                    <p class="text-xl md:text-2xl font-semibold">دوره‌های جدید، فرصت‌های نو</p>
+                </div>
+                <div class="flex gap-x-4">
+                    <button class="flex justify-center items-center size-13 rounded-full border-1 border-amber-500 hover:border-surface bg-surface hover:bg-amber-500 cursor-pointer group/chevron"><svg xmlns="http://www.w3.org/2000/svg" class="text-amber-500 group-hover/chevron:text-surface" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+                    <button class="flex justify-center items-center size-13 rounded-full border-1 border-amber-500 hover:border-surface bg-surface hover:bg-amber-500 cursor-pointer group/chevron"><svg xmlns="http://www.w3.org/2000/svg" class="text-amber-500 group-hover/chevron:text-surface" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6l6 6l1.41-1.41L10.83 12z"/></svg></button>
+                </div>
+            </div>
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/cleanCode.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/docker.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/graphQL.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/leafletJs.webp" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-6 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">آموزش جامع توسعه وردپرس</h3>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به
+                            دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در
+                            دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name flex gap-x-1 text-slate-500"><svg class="teacher-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="6" r="4" />
+                                        <path
+                                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                                    </g>
+                                </svg>امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-amber-500">۵.۰<svg class="score-icon"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m12 17.275l-4.15 2.5q-.275.175-.575.15t-.525-.2t-.35-.437t-.05-.588l1.1-4.725L3.775 10.8q-.25-.225-.312-.513t.037-.562t.3-.45t.55-.225l4.85-.425l1.875-4.45q.125-.3.388-.45t.537-.15t.537.15t.388.45l1.875 4.45l4.85.425q.35.05.55.225t.3.45t.038.563t-.313.512l-3.675 3.175l1.1 4.725q.075.325-.05.588t-.35.437t-.525.2t-.575-.15z" />
+                                </svg></span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-slate-500 gap-x-1 flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 19.128a9.4 9.4 0 0 0 2.625.372a9.3 9.3 0 0 0 4.121-.952q.004-.086.004-.173a4.125 4.125 0 0 0-7.536-2.32M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.3 12.3 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0a3.375 3.375 0 0 1 6.75 0m8.25 2.25a2.625 2.625 0 1 1-5.25 0a2.625 2.625 0 0 1 5.25 0" />
+                                </svg>٨٨</span>
+                            <div class="course-prices flex items-center gap-x-4">
+                                <span
+                                    class="bg-amber-500 text-white w-10 h-10 flex items-center justify-center rounded text-sm font-extrabold">
+                                    20%
+                                </span>
+                                <div class="flex flex-col gap-y-1">
+                                    <span class="regular-price line-through">1,600,000</span>
+                                    <span class="sale-price text-amber-500 font-bold">1,000,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- latest blog articles section -->
+         <section class="w-full space-y-16">
+            <div class="flex justify-between">
+                <div class="space-y-4 inline-block">
+                    <h3 class="relative inline-block text-gray-700 md:text-lg after:content-[''] after:absolute after:right-0 after:top-5 after:-z-10 after:w-[calc(100%+6px)] after:h-1/2 after:[clip-path:polygon(6px_0,100%_0,100%_100%,0_100%)] after:bg-yellow-300/40">
+                        آخـــرین مقالات ما</h3>
+                    <p class="text-xl md:text-2xl font-semibold">مقاله های بروز برنامه نویسی و تکنولوژی</p>
+                </div>
+                <a href="#" class="flex gap-x-1 text-sm font-semibold text-gray-600 hover:text-amber-500 cursor-pointer mt-10 transition-colors duration-200 ease-out">همه
+                    مقالات <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 21 21">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.5 13.5v-7h7m-7 0l8 8" stroke-width="1" />
+                    </svg></a>
+            </div>
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/chatgpt" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-5 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">چت جی پی تی چیست؟ | آموزش کار با ChatGPT و کاربردهای شگفت‌انگیز آن</h3>
+                        <p class="line-clamp-3 text-sm text-gray-700">تا به حال فکر کرده‌اید اگر می‌توانستید با یک دستیار فوق هوشمند صحبت کنید که تقریبا پاسخ هر سوالی را می‌داند، چه اتفاقی می‌افتاد؟ این دقیقا همان چیزی است که ChatGPT ارائه می‌دهد. اگر می‌پرسید چت جی پی تی چیست، در ساده‌ترین تعریف، یک مدل زبان بزرگ و پیشرفته است که توسط شرکت OpenAI توسعه داده شده تا مانند یک انسان با شما گفتگو کند. </p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name text-sm flex gap-x-1 text-slate-500">امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-slate-500">8/18/2025</span>
+                        </div>
+                        <a href="#" class="flex gap-x-1 items-center justify-center hover:text-amber-500 transition-colors duration-200 ease-out">
+                            مطالعه مقاله <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 1.25C6.063 1.25 1.25 6.063 1.25 12S6.063 22.75 12 22.75S22.75 17.937 22.75 12S17.937 1.25 12 1.25m-1.03 14.78l-3.5-3.5a.75.75 0 0 1 0-1.06l3.5-3.5a.75.75 0 1 1 1.06 1.06l-2.22 2.22H16a.75.75 0 0 1 0 1.5H9.81l2.22 2.22a.75.75 0 1 1-1.06 1.06" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/codingSkills" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-5 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">چت جی پی تی چیست؟ | آموزش کار با ChatGPT و کاربردهای شگفت‌انگیز آن</h3>
+                        <p class="line-clamp-3 text-sm text-gray-700">تا به حال فکر کرده‌اید اگر می‌توانستید با یک دستیار فوق هوشمند صحبت کنید که تقریبا پاسخ هر سوالی را می‌داند، چه اتفاقی می‌افتاد؟ این دقیقا همان چیزی است که ChatGPT ارائه می‌دهد. اگر می‌پرسید چت جی پی تی چیست، در ساده‌ترین تعریف، یک مدل زبان بزرگ و پیشرفته است که توسط شرکت OpenAI توسعه داده شده تا مانند یک انسان با شما گفتگو کند. </p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name text-sm flex gap-x-1 text-slate-500">امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-slate-500">8/18/2025</span>
+                        </div>
+                        <a href="#" class="flex gap-x-1 items-center justify-center hover:text-amber-500 transition-colors duration-200 ease-out">
+                            مطالعه مقاله <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 1.25C6.063 1.25 1.25 6.063 1.25 12S6.063 22.75 12 22.75S22.75 17.937 22.75 12S17.937 1.25 12 1.25m-1.03 14.78l-3.5-3.5a.75.75 0 0 1 0-1.06l3.5-3.5a.75.75 0 1 1 1.06 1.06l-2.22 2.22H16a.75.75 0 0 1 0 1.5H9.81l2.22 2.22a.75.75 0 1 1-1.06 1.06" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/hackerPost" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-5 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">چت جی پی تی چیست؟ | آموزش کار با ChatGPT و کاربردهای شگفت‌انگیز آن</h3>
+                        <p class="line-clamp-3 text-sm text-gray-700">تا به حال فکر کرده‌اید اگر می‌توانستید با یک دستیار فوق هوشمند صحبت کنید که تقریبا پاسخ هر سوالی را می‌داند، چه اتفاقی می‌افتاد؟ این دقیقا همان چیزی است که ChatGPT ارائه می‌دهد. اگر می‌پرسید چت جی پی تی چیست، در ساده‌ترین تعریف، یک مدل زبان بزرگ و پیشرفته است که توسط شرکت OpenAI توسعه داده شده تا مانند یک انسان با شما گفتگو کند. </p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name text-sm flex gap-x-1 text-slate-500">امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-slate-500">8/18/2025</span>
+                        </div>
+                        <a href="#" class="flex gap-x-1 items-center justify-center hover:text-amber-500 transition-colors duration-200 ease-out">
+                            مطالعه مقاله <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 1.25C6.063 1.25 1.25 6.063 1.25 12S6.063 22.75 12 22.75S22.75 17.937 22.75 12S17.937 1.25 12 1.25m-1.03 14.78l-3.5-3.5a.75.75 0 0 1 0-1.06l3.5-3.5a.75.75 0 1 1 1.06 1.06l-2.22 2.22H16a.75.75 0 0 1 0 1.5H9.81l2.22 2.22a.75.75 0 1 1-1.06 1.06" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="course-card col-span-1 w-full rounded-xl shadow overflow-hidden pb-4 flex flex-col justify-between">
+                    <a href="#" class="h-42 block">
+                        <img class="rounded-xl" src="/images/covers/WooCommerce" alt="Course Cover">
+                    </a>
+                    <div class="card-body px-5 my-4 space-y-4">
+                        <h3 class="course-title font-semibold line-clamp-2">چت جی پی تی چیست؟ | آموزش کار با ChatGPT و کاربردهای شگفت‌انگیز آن</h3>
+                        <p class="line-clamp-3 text-sm text-gray-700">تا به حال فکر کرده‌اید اگر می‌توانستید با یک دستیار فوق هوشمند صحبت کنید که تقریبا پاسخ هر سوالی را می‌داند، چه اتفاقی می‌افتاد؟ این دقیقا همان چیزی است که ChatGPT ارائه می‌دهد. اگر می‌پرسید چت جی پی تی چیست، در ساده‌ترین تعریف، یک مدل زبان بزرگ و پیشرفته است که توسط شرکت OpenAI توسعه داده شده تا مانند یک انسان با شما گفتگو کند. </p>
+                        <div class="flex justify-between mt-8 border-b-1 border-neutral-200 pb-4">
+                            <span class="teacher-name text-sm flex gap-x-1 text-slate-500">امیر طاهرخانی</span>
+                            <span class="score flex gap-x-1 text-slate-500">8/18/2025</span>
+                        </div>
+                        <a href="#" class="flex gap-x-1 items-center justify-center hover:text-amber-500 transition-colors duration-200 ease-out">
+                            مطالعه مقاله <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 1.25C6.063 1.25 1.25 6.063 1.25 12S6.063 22.75 12 22.75S22.75 17.937 22.75 12S17.937 1.25 12 1.25m-1.03 14.78l-3.5-3.5a.75.75 0 0 1 0-1.06l3.5-3.5a.75.75 0 1 1 1.06 1.06l-2.22 2.22H16a.75.75 0 0 1 0 1.5H9.81l2.22 2.22a.75.75 0 1 1-1.06 1.06" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+         </section>
+
+         <!-- Home Description -->
+        <section class="w-full space-y-16">
+            <div class="space-y-6">
+                <h2 class="text-xl font-bold">با دوره‌های سبزلرن برنامه‌نویس حرفه‌ای شوید!</h2>
+                <p class="text-md text-slate-700">اگر در ابتدای مسیر یادگیری برنامه‌نویسی قرار دارید یا بعد از چند سال فعالیت حرفه‌ای به‌عنوان برنامه‌نویس به‌دنبال فتح قله‌های جدید در این حوزه هستید، دوره‌های سبزلرن شما را به هدفتان می‌رسانند. در این آکادمی همه چیز برای یادگیری برنامه‌نویسی از صفر یا دریافت آموزش‌های تکمیلی برای تبدیل شدن به یک برنامه‌نویس کاربلد مهیا است. در سبزلرن دوره‌های آموزشی متنوع با کمترین هزینه و پشتیبانی مستمر آماده شده تا بدون نیاز به کتاب یا دوره دیگر، بتوانید صفر تا صد برنامه‌نویسی را یاد بگیرید. تجربه‌های دانشجویان قبلی نشان می‌دهد که سبک تدریس اساتید مجرب سبزلرن نه تنها آموزش‌های استاندارد را با پروژه‌های واقعی ترکیب می‌کند، بلکه به دانشجویان انگیزه و اعتمادبه‌نفس لازم برای ادامه مسیر برنامه‌نویسی را می‌دهد. سبزلرن با تمرکز بر آموزش‌های منطبق با نیازهای بازار کار ایران و استفاده از روش‌های تدریس بومی‌سازی‌شده، تضمین می‌کند که نه تنها مطالب به‌روز و حرفه‌ای را یاد بگیرید، بلکه با آمادگی کامل وارد بازار کار شوید.</p>
+            </div>
+            <div class="space-y-6">
+                <h2 class="text-xl font-bold">آموزش برنامه نویسی به سبکی منحصربه فرد</h2>
+                <p class="text-md text-slate-700">شمایی که وارد این صفحه شدید، احتمالا قبلا با چند مرکز آموزش دوره برنامه نویسی آشنا شده و احتمالا بعد از این هم به تحقیقتون ادامه میدید. اما حالا که مهمان سبزلرن شدید، بد نیست در جریان چکیده ای از تجربیات و ذهنیت سبزلرن در آموزش کدنویسی رو هم قرار بگیرید تا به تصمیم گیری نهایی شما کمک کنه. حس سردرگمی و تردید در انتخاب منبع آموزشی و گاهی مسیر یادگیری برنامه نویسی تقریبا بین همه علاقمندان این تخصص جذاب مشترک بوده چون تا دلتون بخواد شعار آموزش برنامه نویسی از صفر و آموزش برنامه نویسی رایگان و ... سراسر وب رو پر کرده اما وقتی شروع به آموزش دیدن می کنید، می بینید که یا مدرس مسلط نیست، یا مسیر آموزشی شفاف و استاندارد نیست و یا سبک و لحن تدریس و ارائه تمرینات طوری نیست که بتونید به راحتی باهاش ارتباط بگیرید و در کوتاه مدت به عمل برسونید. شاید براتون جالب باشه که بعضی از دانشجوهای سبزلرن گفتن که قبل از گذروندن دوره های آموزش برنامه نویسی سبزلرن، به واسطه دوره های غیر استاندارد گذشته تصمیم گرفته بودن کلا از دنیای برنامه نویسی خداحافظی کنن و احساس میکردن استعداد این رشته رو ندارن اما وقتی با سبک و استراتژی آموزشی سبزلرن در آموزش برنامه نویسی از صفر  آشنا شدن، اتفاقا علاقه و انگیزه شون برای ادامه این مسیر دوست داشتنی و پولساز بیشتر هم شد و اعتماد به نفس فوق‌العاده ای پیدا کردن. بنابراین چه اول راه یادگیری برنامه نویسی باشید و چه در حال توسعه مهارت های خودتون، منبع آموزشی به روز و حرفه ای مثل سبزلرن به تنهایی میتونه تمام انتظارات و نیازهای شمارو پوشش بده. خب هر ادعایی سند و مدرک هم میخواد پس بیاید یه دور دلایل این ادعا رو باهم بررسی کنیم</p>
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-lg font-bold">1. آموزش برنامه نویسی رایگان</h3>
+                <p class="text-md text-slate-700">سبزلرن اعتقاد داره ورود هر علاقه مندی به دنیای آموزش کدنویسی باید بدون ریسک باشه و هیچ دغدغه ای جز تمرکز روی یادگیری در ذهن اون فرد نباشه. به همین دلیل می بینید که در طرح آموزش برنامه نویسی رایگان سبزلرن، تمام زبان ها و تکنولوژی های اصلی مثل جاوا اسکریپت، پایتون، CSS ، HTML و چندین دوره دیگه به صورت رایگان و همراه با پشتیبانی مادام العمر آموزش داده میشه که همه اونها در دسته آموزش صفر تا صد برنامه نویسی هم هستن و برخلاف دیگران، به بهانه رایگان بودن چیزی از کیفیت و حجم محتوای دوره ها کم نشده!</p>
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-lg font-bold">2.آموزش کدنویسی بدون ریسک</h3>
+                <p class="text-md text-slate-700">با توجه به مورد قبلی، کاملا واضحه که نگرش سبزلرن، دریافت هزینه آموزش برنامه نویسی از کسانی هست که مسیر قطعی خودشون رو پیدا کردن و قصد توسعه مهارت ها و تکنیک های خودشون رو دارن نه همه! دومین نکته اینه که شما با گذروندن یا دیدن چند جلسه از دوره های رایگان با سبک و کیفیت محتوای دوره برنامه نویسی سبزلرن آشنا میشید و به این ترتیب ریسک شما برای پرداخت هزینه آموزش های بعدی صفر خواهد بود.</p>
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-lg font-bold">3.آموزش صفر تا صد برنامه نویسی واقعی!</h3>
+                <p class="text-md text-slate-700">همونطور که میدونید سرفصل های هر تخصص برنامه نویسی به صورت بین المللی تدوین شده اما گاهی برای ایرانی ها به دلیل محدودیت ها و مسائل تکنیکی کدنویسی، این سرفصل ها باید بومی سازی شده و با مثال ها و پروژه های ایرانی تدریس بشن تا دانشجو در فضای بازار کار قرار بگیره. فرآیند بومی سازی هم نیاز به مطالعه و تسلط خیلی زیادی داره که در عین حفظ ساختار کامل دوره برنامه نویسی، اون رو به محتوایی منطبق بر نیاز دانشجوهای ایرانی، روان‌تر و عملی‌تر تبدیل کنه. بنابراین در سبزلرن قرار نیست کتابی و خشک این مهارت جذاب رو یاد بگیرید.</p>
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-lg font-bold">4.دوره برنامه نویسی با تضمین نقد</h3>
+                <p class="text-md text-slate-700">ضمانت ها معمولا بعد از فروش ارائه میشن اما سبزلرن به عنوان ضمانت پیش‌دستانه، 20 الی 40 درصد همه دوره های پولی رو هم به رایگان در اختیار علاقه‌مندان گذاشته تا دیگه هیچ حرف و حدیث و اصطلاحا هندونه دربسته‌ای در کار نباشه و خیلی راحت تصمیمشون برای انتخاب بهترین منبع آموزش برنامه نویسی رو بگیرن.</p>
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-lg font-bold">5.آموزش برنامه نویسی از صفر با همراهی پشتیبان مسلط</h3>
+                <p class="text-md text-slate-700">نکته مهم بعدی اینه که سبزلرن اعتقاد داره ارائه آموزش برنامه نویسی به تنهایی، لزوما به معنی تربیت یک برنامه نویس حرفه ای نیست و حتما نیاز داره که پشتیبانان فنی مسلط و آشنا به شرایط بازار کار هر رشته قدم به قدم در کنار دانشجو باشن تا از لحظه شروع دوره برنامه نویسی تا تدوین رزومه، جلسه مصاحبه استخدام و چالش های بعد از استخدام همراهی لازم و دلسوزانه رو داشته باشن.</p>
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-lg font-bold">6.یادگیری برنامه نویسی با چشم باز</h3>
+                <p class="text-md text-slate-700">آخرین نکته هم توصیه ما به مطالعه کامنت دانشجوهای قبلی سبزلرن هست که در صفحه هر دوره آموزش برنامه نویسی میتونید مطالعه کنید و بر اساس برآیند کلی نظرات، درصد رضایت رو محاسبه کنید.</p>
+            </div>
+            <button class="block border-1 border-amber-500 px-4 py-2 rounded text-sm font-semibold text-amber-500 hover:bg-amber-500 hover:text-white mx-auto cursor-pointer">مشاهده کمتر</button>
+        </section>
+
+    </div>
+
 </body>
 
 </html>

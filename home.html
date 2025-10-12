@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Home</title>
+</head>
+<body class="" dir="rtl">
+    <!-- svg icons sprite -->
+    <svg class="hidden">
+        <symbol id="check-circle-notification" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+		    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+	    </symbol>
+        <symbol id="shopping-bag" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+		    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path>
+	    </symbol>
+        <symbol id="bars" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+		    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+	    </symbol>
+        <symbol id="moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+        </symbol>
+        <symbol id="user" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path>
+        </symbol>
+        <symbol id="chevron-down-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"></path>
+        </symbol>
+        <symbol id="moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+        </symbol>
+        <symbol id="sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"></path>
+        </symbol>
+    </svg>
+    <header class="bg-[url(/images/hero-section.webp)] bg-cover bg-no-repeat origin-center text-white">
+        <!-- offer section -->
+        <div class="flex justify-center sm:justify-start items-center gap-x-2 px-8 py-4 bg-amber-500 font-bold">
+            <svg class="max-sm:hidden size-14"><use xlink:href="#check-circle-notification"></use></svg><p class="sm:whitespace-nowrap">۲۰۰ هزار تومان تخفیف ویژه اولین خرید از سبزلرن، کد تخفیف: off200t</p>
+        </div>
+        <!-- navbar -->
+        <nav class="relative flex items-center justify-between h-18 md:h-25 px-4 lg:px-2.5 mx-auto lg:max-w-[1024px] xl:max-w-[1280px]">
+            <a href="#" id="navbar-icon" class="md:hidden">
+                <svg class="size-6">
+                    <use xlink:href="#bars"></use>
+                </svg>
+            </a>
+            <div class="flex items-center gap-x-8 md:gap-x-4 lg:gap-x-8">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-11 lg:h-14" viewBox="0 0 1020 769">
+                        <polygon fill="#B28900"
+                            points="484.8124 560.0603 302.0609 655.3444 238.4124 617.2945 238.4124 462.4662 484.8124 560.0603">
+                        </polygon>
+                        <polygon fill="#B2A600"
+                            points="972.5712 207.8379 484.6647 462.7753 10.7595 275.1003 498.7369 20.1923 972.5712 207.8379">
+                        </polygon>
+                        <line fill="#665A00" x1="929.7475" y1="307.461" x2="929.6513" y2="307.6423"></line>
+                        <polygon fill="#B2A600"
+                            points="1010.2748 576.281 951.4402 632.8758 896.4012 572.396 934.1612 536.0524 934.0697 227.9393 972.5606 207.8255 972.3776 534.6349 1010.2748 576.281">
+                        </polygon>
+                        <polygon fill="#7A6B00"
+                            points="972.5669 246.8789 972.5027 335.57 934.0989 357.7689 934.0747 266.9936 972.5669 246.8789">
+                        </polygon>
+                        <polygon fill="#6B6000"
+                            points="478.5395 760.6504 238.4571 617.3325 238.4571 604.062 484.6701 560.0356 489.1606 570.333 478.5395 760.6504">
+                        </polygon>
+                        <polygon fill="#7A6B00"
+                            points="585.898 409.8693 484.472 463.0223 10.7549 275.1038 498.7374 20.1923 585.898 409.8693">
+                        </polygon>
+                        <polygon fill="#443900"
+                            points="972.5669 207.8394 972.5027 255.9601 934.0989 300.7406 934.0747 227.9542 972.5669 207.8394">
+                        </polygon>
+                        <polygon fill="#E0C56A"
+                            points="816.6519 386.7124 816.6519 527.0091 478.1841 760.5632 302.0575 655.3487 816.6519 386.7124">
+                        </polygon>
+                    </svg>
+                </a>
+                <ul class="flex items-center gap-x-8 md:gap-x-4 lg:gap-x-8 max-md:hidden">
+                    <li class="relative group/sub-menu">
+                        <a class="whitespace-nowrap courses" href="#">دوره‌های آموزشی</a>
+                        <div class="invisible opacity-0 md:group-hover/sub-menu:visible md:group-hover/sub-menu:opacity-100 transition-all absolute top-full right-0 pt-7">
+                            <div class="relative w-44 min-h shadow bg-white text-gray-700 rounded hover:rounded-l-none flex flex-col justify-between font-medium">
+                                <div class="h-11 group">
+                                    <a class="w-full h-full px-3 flex items-center justify-between group-hover:border-l-2 group-hover:border-l-sky-500 group-hover:bg-sky-500/10 group-hover:text-sky-500" href="#">فرانت‌اند<svg class="size-4 rotate-90"><use xlink:href="#chevron-down-mini"></use></svg></a>
+                                    <div class="w-56 max-h-full shadow border-10 border-transparent overflow-y-scroll scrollbar scrollbar-w-1 scrollbar-thumb-gray-400/30 scrollbar-thumb-rounded px-5 bg-white absolute right-full top-0 bottom-0 rounded-l invisible opacity-0  group-hover:visible group-hover:opacity-100 transition-all">
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره جاوااسکریپت</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره تیلویند</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره ری‌اکت</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره html</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره css</a>
+                                    </div>
+                                </div>
+                                <div class="h-11 group">
+                                    <a class="w-full h-full px-3 flex items-center justify-between group-hover:border-l-2 group-hover:border-l-sky-500 group-hover:bg-sky-500/10 group-hover:text-sky-500" href="#">بک‌اند<svg class="size-4 rotate-90"><use xlink:href="#chevron-down-mini"></use></svg></a>
+                                    <div class="w-56 max-h-full shadow border-10 border-transparent overflow-y-scroll scrollbar scrollbar-w-1 scrollbar-thumb-gray-400/30 scrollbar-thumb-rounded px-5 bg-white absolute right-full top-0 bottom-0 rounded-l invisible opacity-0  group-hover:visible group-hover:opacity-100 transition-all">
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره C#</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره .Net</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره SQL Server</a>
+                                    </div>
+                                </div>
+                                <div class="h-11 group">
+                                    <a class="w-full h-full px-3 flex items-center justify-between group-hover:border-l-2 group-hover:border-l-sky-500 group-hover:bg-sky-500/10 group-hover:text-sky-500" href="#">امنیت<svg class="size-4 rotate-90"><use xlink:href="#chevron-down-mini"></use></svg></a>
+                                    <div class="w-56 max-h-full shadow border-10 border-transparent overflow-y-scroll scrollbar scrollbar-w-1 scrollbar-thumb-gray-400/30 scrollbar-thumb-rounded px-5 bg-white absolute right-full top-0 bottom-0 rounded-l invisible opacity-0  group-hover:visible group-hover:opacity-100 transition-all">
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره CEH</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره Linux</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره Security+</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره Network+</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره A+</a>
+                                    </div>
+                                </div>
+                                <div class="h-11 group">
+                                    <a class="w-full h-full px-3 flex items-center justify-between group-hover:border-l-2 group-hover:border-l-sky-500 group-hover:bg-sky-500/10 group-hover:text-sky-500" href="#">پایتون<svg class="size-4 rotate-90"><use xlink:href="#chevron-down-mini"></use></svg></a>
+                                    <div class="w-56 max-h-full shadow border-10 border-transparent overflow-y-scroll scrollbar scrollbar-w-1 scrollbar-thumb-gray-400/30 scrollbar-thumb-rounded px-5 bg-white absolute right-full top-0 bottom-0 rounded-l invisible opacity-0  group-hover:visible group-hover:opacity-100 transition-all">
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره python</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره Django</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره TelegramBot</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره Tools</a>
+                                        <a class="h-11 flex items-center hover:text-sky-500 transition-all" href="#">دوره Machine Learning</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="whitespace-nowrap" href="#">همه دوره‌ها</a></li>
+                    <li><a class="whitespace-nowrap" href="#">مقالات</a></li>
+                    <li><a class="whitespace-nowrap" href="#">مشاوره برنامه‌نویسی</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-x-8">
+                <a href="" class="max-md:hidden">
+                    <svg class="size-6">
+                        <use xlink:href="#moon"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="size-6">
+                        <use xlink:href="#shopping-bag"></use>
+                    </svg>
+                </a>
+                <button class="flex font-bold bg-amber-500 py-3 px-4 lg:px-5 rounded-lg max-md:hidden gap-x-2 whitespace-nowrap"><svg class="size-6"><use xlink:href="#user"></use></svg>ورود|عضویت</button>
+            </div>
+        </nav>
+        <!-- mobile navbar -->
+         <div class="translate-x-full mobile-nav w-64 max-h-full bg-white text-gray-700 fixed top-0 right-0 z-50 transition duration-500 overflow-y-auto scrollbar scrollbar-w-1 scrollbar-thumb-gray-400/30">
+            <a href="#" class="bg-sky-500/10 text-sky-500 w-full py-4 px-2 flex justify-center items-center font-bold">ورود یا ثبت نام</a>
+            <div class="text-sm font-medium px-4 py-4 h-[calc(100vh-4rem)]">
+                <h3 class="mt-4 text-amber-500">دسته‌بندی‌ها</h3>
+                <ul class=" flex flex-col py-3">
+                    <li>
+                        <div class="w-full h-11 flex justify-between items-center">
+                            <a href="#">فرانت‌اند</a>
+                            <svg class="chevron-down-icon size-4 transition rotate-90"><use xlink:href="#chevron-down-mini"></use></svg>
+                        </div>
+                        <ul class="hidden py-4 px-3 flex-col gap-y-4 bg-[#f3f4f6] w-full rounded">
+                            <li class=""><a href="#">آموزش html</a></li>
+                            <li class=""><a href="#">آموزش css</a></li>
+                            <li class=""><a href="#">آموزش Js</a></li>
+                            <li class=""><a href="#">آموزش React</a></li>
+                            <li class=""><a href="#">آموزش Vue</a></li>
+                            <li class=""><a href="#">آموزش Angular</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="w-full h-11 flex justify-between items-center">
+                            <a href="#">بک‌اند</a>
+                            <svg class="chevron-down-icon size-4 transition rotate-90"><use xlink:href="#chevron-down-mini"></use></svg>
+                        </div>
+                        <ul class="hidden py-4 px-3 flex-col gap-y-4 bg-[#f3f4f6] w-full rounded">
+                            <li class=""><a href="#">آموزش html</a></li>
+                            <li class=""><a href="#">آموزش css</a></li>
+                            <li class=""><a href="#">آموزش Js</a></li>
+                            <li class=""><a href="#">آموزش React</a></li>
+                            <li class=""><a href="#">آموزش Vue</a></li>
+                            <li class=""><a href="#">آموزش Angular</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="w-full h-11 flex justify-between items-center">
+                            <a href="#">امنیت</a>
+                            <svg class="chevron-down-icon size-4 transition rotate-90"><use xlink:href="#chevron-down-mini"></use></svg>
+                        </div>
+                        <ul class="hidden py-4 px-3 flex-col gap-y-4 bg-[#f3f4f6] w-full rounded">
+                            <li class=""><a href="#">آموزش html</a></li>
+                            <li class=""><a href="#">آموزش css</a></li>
+                            <li class=""><a href="#">آموزش Js</a></li>
+                            <li class=""><a href="#">آموزش React</a></li>
+                            <li class=""><a href="#">آموزش Vue</a></li>
+                            <li class=""><a href="#">آموزش Angular</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="w-full h-11 flex justify-between items-center">
+                            <a href="#">پایتون</a>
+                            <svg class="chevron-down-icon size-4 transition rotate-90"><use xlink:href="#chevron-down-mini"></use></svg>
+                        </div>
+                        <ul class="hidden py-4 px-3 flex-col gap-y-4 bg-[#f3f4f6] w-full rounded">
+                            <li class=""><a href="#">آموزش html</a></li>
+                            <li class=""><a href="#">آموزش css</a></li>
+                            <li class=""><a href="#">آموزش Js</a></li>
+                            <li class=""><a href="#">آموزش React</a></li>
+                            <li class=""><a href="#">آموزش Vue</a></li>
+                            <li class=""><a href="#">آموزش Angular</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <div class="w-full h-11 flex justify-between items-center">
+                            <a href="#">همه دوره‌ها</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w-full h-11 flex justify-between items-center">
+                            <a href="#">مقالات</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w-full h-11 flex justify-between items-center">
+                            <a href="#">مشاوره برنامه نویسی</a>
+                        </div>
+                    </li>
+                </ul>
+                <hr class="text-gray-700/30 my-2">
+                <div class="flex items-center h-11 gap-x-2 cursor-pointer"><svg class="size-6" id="theme"><use xlink:href="#moon"></use></svg><span>تم تیره</span></div>
+            </div>
+        </div>
+         
+         <span class="hidden overlay w-full h-full fixed left-0 top-0 bg-[#00000030] z-40"></span>
+    </header>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>

@@ -7,8 +7,8 @@ let changeThemeBtn = document.querySelector('#theme')
 //Opening the navbar by clicking on the navIcon
 navbarIcon.addEventListener('click', () => {
     console.log('click')
-    mobileNav.classList.remove('translate-x-full')
     overlay.classList.remove('hidden')
+    mobileNav.classList.remove('translate-x-full')
 })
 
 //closing the mobile navbar by clicking on the overlay

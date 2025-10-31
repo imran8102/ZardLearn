@@ -6,7 +6,11 @@ let changeThemeBtn = document.querySelector('#theme')
 let hd_Btn = document.querySelector('#hd-btn')
 let hd_ContentElem = document.querySelector('#hd-content')
 let hd_Overlay = document.querySelector('#hd-overlay')
-
+let blurOverlay = document.querySelector("#blur-overlay")
+let userOptionsBtn = document.querySelector('#userOptionsBtn')
+let userOptions = document.querySelector('#userOptions')
+let cartBtn = document.querySelector('#cart-btn')
+let cartMenu = document.querySelector('#cartMenu')
 
 //Opening the navbar by clicking on the navIcon
 navbarIcon.addEventListener('click', () => {
@@ -46,7 +50,7 @@ changeThemeBtn.addEventListener('click',(e) => {
     }
 })
 
-//view and hide content
+//show and hide content
 hd_Btn.addEventListener('click',(e) => {
     console.log(e)
     console.log(hd_Btn.innerHTML)
@@ -64,3 +68,45 @@ hd_Btn.addEventListener('click',(e) => {
         hd_Overlay.classList.remove('hidden')
     }
 })
+
+//show and hide user options menu
+userOptionsBtn.addEventListener('click',() => {
+    toggleUserOptionsMenu()
+})
+//hide user options menu or cart menu by clicking outside of the menu
+window.addEventListener('click', (e) => {
+    if(!userOptions.classList.contains('opacity-0') && !userOptions.contains(e.target) && !userOptionsBtn.contains(e.target)){
+        toggleUserOptionsMenu()
+    }
+    if(!cartMenu.classList.contains('opacity-0') && !cartMenu.contains(e.target) && !cartBtn.contains(e.target)){
+        toggleCartMenu()
+    }
+})
+
+//show or hide user options menu function
+function toggleUserOptionsMenu(){
+    userOptionsBtn.classList.toggle('z-40')
+    blurOverlay.classList.toggle('opacity-0')
+    blurOverlay.classList.toggle('pointer-events-none')
+    userOptions.classList.toggle('opacity-0')
+    userOptions.classList.toggle('pointer-events-none')
+    userOptions.classList.toggle('scale-95')
+    userOptions.classList.toggle('z-40')
+}
+
+//show cart preview by clicking on cart button
+cartBtn.addEventListener('click',() => {
+    console.log("click")
+    toggleCartMenu()
+})
+
+//show or hide cart menu function
+function toggleCartMenu(){
+    blurOverlay.classList.toggle('opacity-0')
+    blurOverlay.classList.toggle('pointer-events-none')
+    cartBtn.classList.toggle('z-40')
+    cartMenu.classList.toggle('opacity-0')
+    cartMenu.classList.toggle('pointer-events-none')
+    cartMenu.classList.toggle('scale-95')
+    cartMenu.classList.toggle('z-40')
+}

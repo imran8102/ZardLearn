@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/output.css">
     <title>Home</title>
 </head>
@@ -733,15 +734,17 @@
                     <p class="font-bold text-xl md:text-2xl">سکوی پرتاب شما به سمت موفقیت</p>
                 </div>
                 <div class="flex gap-x-4 max-sm:absolute max-sm:-bottom-20 max-sm:left-1/2 max-sm:-translate-x-1/2">
-                    <button class="moveRight-btn flex items-center justify-center border rounded-full p-3 border-amber-500 text-amber-500 hover:text-white hover:bg-amber-500 active:bg-amber-500 active:text-white cursor-pointer"><svg class="size-6 -rotate-90"><use xlink:href="#chevron-down"></use></svg></button>
-                    <button class="moveLeft-btn flex items-center justify-center border rounded-full p-3 border-amber-500 text-amber-500 hover:text-white hover:bg-amber-500 active:bg-amber-500 active:text-white cursor-pointer"><svg class="size-6 rotate-90"><use xlink:href="#chevron-down"></use></svg></button>
+                    <button class="custom-prev1 flex items-center justify-center border rounded-full p-3 border-amber-500 text-amber-500 hover:text-white hover:bg-amber-500 active:bg-amber-500 active:text-white cursor-pointer"><svg class="size-6 -rotate-90"><use xlink:href="#chevron-down"></use></svg></button>
+                    <button class="custom-next1 flex items-center justify-center border rounded-full p-3 border-amber-500 text-amber-500 hover:text-white hover:bg-amber-500 active:bg-amber-500 active:text-white cursor-pointer"><svg class="size-6 rotate-90"><use xlink:href="#chevron-down"></use></svg></button>
                 </div>
             </div>
-            <!-- cards -->
-             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 place-items-center">
-                <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+            <!-- cards slider -->
+            <div class="swiper mySwiper1 w-full">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
                     <a href="#" class="h-42">
-                        <img src="/images/covers/cleanCode.webp" alt="course cover">
+                        <img class="block w-full h-full object-cover" src="/images/covers/cleanCode.webp" alt="course cover">
                     </a>
                     <div class="body p-4 space-y-4">
                         <h2 class="font-semibold">آموزش جامع وردپرس</h2>
@@ -764,9 +767,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
                     <a href="#" class="h-42">
-                        <img src="/images/covers/docker.webp" alt="course cover">
+                        <img class="block w-full h-full object-cover" src="/images/covers/docker.webp" alt="course cover">
                     </a>
                     <div class="body p-4 space-y-4">
                         <h2 class="font-semibold">آموزش جامع وردپرس</h2>
@@ -789,9 +794,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
                     <a href="#" class="h-42">
-                        <img src="/images/covers/graphQL.webp" alt="course cover">
+                        <img class="block w-full h-full object-cover" src="/images/covers/graphQL.webp" alt="course cover">
                     </a>
                     <div class="body p-4 space-y-4">
                         <h2 class="font-semibold">آموزش جامع وردپرس</h2>
@@ -814,9 +821,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
                     <a href="#" class="h-42">
-                        <img src="/images/covers/leafletJs.webp" alt="course cover">
+                        <img class="block w-full h-full object-cover" src="/images/covers/leafletJs.webp" alt="course cover">
                     </a>
                     <div class="body p-4 space-y-4">
                         <h2 class="font-semibold">آموزش جامع وردپرس</h2>
@@ -839,7 +848,91 @@
                         </div>
                     </div>
                 </div>
-             </div>
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    <a href="#" class="h-42">
+                        <img class="block w-full h-full object-cover" src="/images/covers/nodeJs.webp" alt="course cover">
+                    </a>
+                    <div class="body p-4 space-y-4">
+                        <h2 class="font-semibold">آموزش جامع وردپرس</h2>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between items-center py-4 mt-8 border-b border-b-neutral-200/70">
+                            <h3 class="flex gap-x-2 items-center text-slate-500 hover:text-amber-500 cursor-pointer"><svg class="size-5"><use xlink:href="#user"></use></svg> امیر طاهرخانی</h3>
+                            <span class="flex items-center gap-x-1 text-amber-500">5.0 <svg class="size-5"><use xlink:href="#star-mini"></use></svg></span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="members flex gap-x-1 text-slate-500">
+                                <svg class="size-5 flex gap-x-2 items-center"><use xlink:href="#users"></use></svg> 175
+                            </span>
+                            <div class="cost flex items-center gap-x-4">
+                                <div class="course-offer rounded bg-amber-500 text-white text-sm font-bold flex items-center justify-center p-1">20%</div>
+                                <div class="price flex flex-col ">
+                                    <span class="text-slate-500 line-through text-sm">3,000,000</span>
+                                    <span class="text-amber-500 font-bold">2,400,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    <a href="#" class="h-42">
+                        <img class="block w-full h-full object-cover" src="/images/covers/php.webp" alt="course cover">
+                    </a>
+                    <div class="body p-4 space-y-4">
+                        <h2 class="font-semibold">آموزش جامع وردپرس</h2>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between items-center py-4 mt-8 border-b border-b-neutral-200/70">
+                            <h3 class="flex gap-x-2 items-center text-slate-500 hover:text-amber-500 cursor-pointer"><svg class="size-5"><use xlink:href="#user"></use></svg> امیر طاهرخانی</h3>
+                            <span class="flex items-center gap-x-1 text-amber-500">5.0 <svg class="size-5"><use xlink:href="#star-mini"></use></svg></span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="members flex gap-x-1 text-slate-500">
+                                <svg class="size-5 flex gap-x-2 items-center"><use xlink:href="#users"></use></svg> 175
+                            </span>
+                            <div class="cost flex items-center gap-x-4">
+                                <div class="course-offer rounded bg-amber-500 text-white text-sm font-bold flex items-center justify-center p-1">20%</div>
+                                <div class="price flex flex-col ">
+                                    <span class="text-slate-500 line-through text-sm">3,000,000</span>
+                                    <span class="text-amber-500 font-bold">2,400,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    <a href="#" class="h-42">
+                        <img class="block w-full h-full object-cover" src="/images/covers/wordpress.webp" alt="course cover">
+                    </a>
+                    <div class="body p-4 space-y-4">
+                        <h2 class="font-semibold">آموزش جامع وردپرس</h2>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between items-center py-4 mt-8 border-b border-b-neutral-200/70">
+                            <h3 class="flex gap-x-2 items-center text-slate-500 hover:text-amber-500 cursor-pointer"><svg class="size-5"><use xlink:href="#user"></use></svg> امیر طاهرخانی</h3>
+                            <span class="flex items-center gap-x-1 text-amber-500">5.0 <svg class="size-5"><use xlink:href="#star-mini"></use></svg></span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="members flex gap-x-1 text-slate-500">
+                                <svg class="size-5 flex gap-x-2 items-center"><use xlink:href="#users"></use></svg> 175
+                            </span>
+                            <div class="cost flex items-center gap-x-4">
+                                <div class="course-offer rounded bg-amber-500 text-white text-sm font-bold flex items-center justify-center p-1">20%</div>
+                                <div class="price flex flex-col ">
+                                    <span class="text-slate-500 line-through text-sm">3,000,000</span>
+                                    <span class="text-amber-500 font-bold">2,400,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+            
          </section>
 
          <!-- our services section -->
@@ -898,15 +991,17 @@
                     <p class="font-bold text-xl md:text-2xl">دوره‌های جدید، فرصت‌های نو</p>
                 </div>
                 <div class="flex gap-x-4 max-sm:absolute max-sm:-bottom-20 max-sm:left-1/2 max-sm:-translate-x-1/2">
-                    <button class="moveRight-btn flex items-center justify-center border rounded-full p-3 border-amber-500 text-amber-500 hover:text-white hover:bg-amber-500 active:bg-amber-500 active:text-white cursor-pointer"><svg class="size-6 -rotate-90"><use xlink:href="#chevron-down"></use></svg></button>
-                    <button class="moveLeft-btn flex items-center justify-center border rounded-full p-3 border-amber-500 text-amber-500 hover:text-white hover:bg-amber-500 active:bg-amber-500 active:text-white cursor-pointer"><svg class="size-6 rotate-90"><use xlink:href="#chevron-down"></use></svg></button>
+                    <button class="custom-prev2 flex items-center justify-center border rounded-full p-3 border-amber-500 text-amber-500 hover:text-white hover:bg-amber-500 active:bg-amber-500 active:text-white cursor-pointer"><svg class="size-6 -rotate-90"><use xlink:href="#chevron-down"></use></svg></button>
+                    <button class="custom-prev2 flex items-center justify-center border rounded-full p-3 border-amber-500 text-amber-500 hover:text-white hover:bg-amber-500 active:bg-amber-500 active:text-white cursor-pointer"><svg class="size-6 rotate-90"><use xlink:href="#chevron-down"></use></svg></button>
                 </div>
             </div>
-            <!-- cards -->
-             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 place-items-center">
-                <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+            <!-- cards slider -->
+             <div class="swiper mySwiper2 w-full">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
                     <a href="#" class="h-42">
-                        <img src="/images/covers/cleanCode.webp" alt="course cover">
+                        <img class="block w-full h-full object-cover" src="/images/covers/threeJs.webp" alt="course cover">
                     </a>
                     <div class="body p-4 space-y-4">
                         <h2 class="font-semibold">آموزش جامع وردپرس</h2>
@@ -929,9 +1024,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
                     <a href="#" class="h-42">
-                        <img src="/images/covers/docker.webp" alt="course cover">
+                        <img class="block w-full h-full object-cover" src="/images/covers/redis.webp" alt="course cover">
                     </a>
                     <div class="body p-4 space-y-4">
                         <h2 class="font-semibold">آموزش جامع وردپرس</h2>
@@ -954,9 +1051,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
                     <a href="#" class="h-42">
-                        <img src="/images/covers/graphQL.webp" alt="course cover">
+                        <img class="block w-full h-full object-cover" src="/images/covers/php.webp" alt="course cover">
                     </a>
                     <div class="body p-4 space-y-4">
                         <h2 class="font-semibold">آموزش جامع وردپرس</h2>
@@ -979,9 +1078,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
                     <a href="#" class="h-42">
-                        <img src="/images/covers/leafletJs.webp" alt="course cover">
+                        <img class="block w-full h-full object-cover" src="/images/covers/python-bot.webp" alt="course cover">
                     </a>
                     <div class="body p-4 space-y-4">
                         <h2 class="font-semibold">آموزش جامع وردپرس</h2>
@@ -1004,7 +1105,90 @@
                         </div>
                     </div>
                 </div>
-             </div>
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    <a href="#" class="h-42">
+                        <img class="block w-full h-full object-cover" src="/images/covers/linux.webp" alt="course cover">
+                    </a>
+                    <div class="body p-4 space-y-4">
+                        <h2 class="font-semibold">آموزش جامع وردپرس</h2>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between items-center py-4 mt-8 border-b border-b-neutral-200/70">
+                            <h3 class="flex gap-x-2 items-center text-slate-500 hover:text-amber-500 cursor-pointer"><svg class="size-5"><use xlink:href="#user"></use></svg> امیر طاهرخانی</h3>
+                            <span class="flex items-center gap-x-1 text-amber-500">5.0 <svg class="size-5"><use xlink:href="#star-mini"></use></svg></span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="members flex gap-x-1 text-slate-500">
+                                <svg class="size-5 flex gap-x-2 items-center"><use xlink:href="#users"></use></svg> 175
+                            </span>
+                            <div class="cost flex items-center gap-x-4">
+                                <div class="course-offer rounded bg-amber-500 text-white text-sm font-bold flex items-center justify-center p-1">20%</div>
+                                <div class="price flex flex-col ">
+                                    <span class="text-slate-500 line-through text-sm">3,000,000</span>
+                                    <span class="text-amber-500 font-bold">2,400,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    <a href="#" class="h-42">
+                        <img class="block w-full h-full object-cover" src="/images/covers/php.webp" alt="course cover">
+                    </a>
+                    <div class="body p-4 space-y-4">
+                        <h2 class="font-semibold">آموزش جامع وردپرس</h2>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between items-center py-4 mt-8 border-b border-b-neutral-200/70">
+                            <h3 class="flex gap-x-2 items-center text-slate-500 hover:text-amber-500 cursor-pointer"><svg class="size-5"><use xlink:href="#user"></use></svg> امیر طاهرخانی</h3>
+                            <span class="flex items-center gap-x-1 text-amber-500">5.0 <svg class="size-5"><use xlink:href="#star-mini"></use></svg></span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="members flex gap-x-1 text-slate-500">
+                                <svg class="size-5 flex gap-x-2 items-center"><use xlink:href="#users"></use></svg> 175
+                            </span>
+                            <div class="cost flex items-center gap-x-4">
+                                <div class="course-offer rounded bg-amber-500 text-white text-sm font-bold flex items-center justify-center p-1">20%</div>
+                                <div class="price flex flex-col ">
+                                    <span class="text-slate-500 line-through text-sm">3,000,000</span>
+                                    <span class="text-amber-500 font-bold">2,400,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="swiper-slide text-center text-lg flex justify-center items-center">
+                        <div class="card bg-white  col-span-1 rounded-2xl overflow-hidden">
+                    <a href="#" class="h-42">
+                        <img class="block w-full h-full object-cover" src="/images/covers/wordpress.webp" alt="course cover">
+                    </a>
+                    <div class="body p-4 space-y-4">
+                        <h2 class="font-semibold">آموزش جامع وردپرس</h2>
+                        <p class="line-clamp-2 text-sm text-gray-700">آموزش وردپرس یکی از بهترین مسیرها برای ورود به دنیای طراحی سایت است، چرا که وردپرس پرکاربردترین و محبوب‌ترین سیستم مدیریت محتوا است که در دنیای طراحی سایت حرف اول را می‌زند.</p>
+                        <div class="flex justify-between items-center py-4 mt-8 border-b border-b-neutral-200/70">
+                            <h3 class="flex gap-x-2 items-center text-slate-500 hover:text-amber-500 cursor-pointer"><svg class="size-5"><use xlink:href="#user"></use></svg> امیر طاهرخانی</h3>
+                            <span class="flex items-center gap-x-1 text-amber-500">5.0 <svg class="size-5"><use xlink:href="#star-mini"></use></svg></span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="members flex gap-x-1 text-slate-500">
+                                <svg class="size-5 flex gap-x-2 items-center"><use xlink:href="#users"></use></svg> 175
+                            </span>
+                            <div class="cost flex items-center gap-x-4">
+                                <div class="course-offer rounded bg-amber-500 text-white text-sm font-bold flex items-center justify-center p-1">20%</div>
+                                <div class="price flex flex-col ">
+                                    <span class="text-slate-500 line-through text-sm">3,000,000</span>
+                                    <span class="text-amber-500 font-bold">2,400,000 تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
          </section>
 
          <!-- articles section -->
@@ -1198,6 +1382,7 @@
             </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="/scripts/script.js"></script>
 </body>
 </html>

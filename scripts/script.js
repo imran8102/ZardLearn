@@ -110,3 +110,54 @@ function toggleCartMenu(){
     cartMenu.classList.toggle('scale-95')
     cartMenu.classList.toggle('z-40')
 }
+
+//swiper
+//for latest courses carousel
+var swiper = new Swiper(".mySwiper1", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop:true,
+      navigation: {
+        nextEl: ".custom-next1",
+        prevEl: ".custom-prev1",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1280: {
+          slidesPerView: 4,
+        }
+        },
+        autoplay: {
+            delay: 3000,
+        }
+    });
+
+    //for recent courses carousel
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop:true,
+      navigation: {
+        nextEl: ".custom-next2",
+        prevEl: ".custom-prev2",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1280: {
+          slidesPerView: 4,
+        }
+        },
+        autoplay: {
+            delay: 3000,
+        }
+    });

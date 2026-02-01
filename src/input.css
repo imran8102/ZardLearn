@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @plugin 'tailwind-scrollbar' {
     nocompatible: true;
@@ -19,6 +20,7 @@
 
     --color-primary: #FFD700;
     --color-surface: #f3f4f6;
+    --color-darker:#242A38;
 
     --spacing-13 : 3.25rem;
     --spacing-18 : 4.5rem;

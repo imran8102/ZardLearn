@@ -1,8 +1,13 @@
+let htmlElem = document.querySelector('html')
 let navbarIcon = document.querySelector('#navbar-icon')
 let mobileNav = document.querySelector('.mobile-nav')
 let overlay = document.querySelector('.overlay')
 let chevronDownIcons = document.querySelectorAll('.chevron-down-icon')
-let changeThemeBtn = document.querySelector('#theme')
+let changeThemeBtnMobile = document.querySelector('.changeMode-btn-mobile')
+let changeThemeBtn = document.querySelector('#changeMode-btn')
+let moonIconElems = document.querySelectorAll('.moonIcon')
+let sunIconElems = document.querySelectorAll('.sunIcon')
+let changeModeTextElem = document.querySelector('.changeMode-text')
 let hd_Btn = document.querySelector('#hd-btn')
 let hd_ContentElem = document.querySelector('#hd-content')
 let hd_Overlay = document.querySelector('#hd-overlay')
@@ -36,19 +41,25 @@ chevronDownIcons.forEach((chevronDownIcon) => {
     })
 })
 
-//change theme
-changeThemeBtn.addEventListener('click',(e) => {
-    console.log(e.target)
-    let themeBtn = document.querySelector('#theme')
-    let changeThemeBtnValue = themeBtn.firstElementChild.getAttribute('xlink:href')
-    if(changeThemeBtnValue === '#moon'){
-        themeBtn.setAttribute("xlink:href",'#sun')
-        e.target.nextElementSibling.innerHTML = "تم روشن"
-    }else{
-        themeBtn.setAttribute("xlink:href",'#moon')
-        e.target.nextElementSibling.innerHTML = "تم تیره"
-    }
+//change theme on mobile
+changeThemeBtnMobile.addEventListener('click',() => {
+    changeTheme()
 })
+//change theme on desktop
+changeThemeBtn.addEventListener('click',()=>{
+    changeTheme()
+})
+//change theme function
+function changeTheme(){
+    htmlElem.classList.toggle('dark')
+    moonIconElems.forEach((moonIcon) => {
+        moonIcon.classList.toggle('hidden')
+    })
+    sunIconElems.forEach((sunIcon) => {
+        sunIcon.classList.toggle('hidden')
+    })
+    changeModeTextElem.textContent = changeModeTextElem.textContent === changeModeTextElem.dataset.a ? changeModeTextElem.dataset.b : changeModeTextElem.dataset.a
+}
 
 //show and hide content
 hd_Btn.addEventListener('click',(e) => {
@@ -137,27 +148,27 @@ var swiper = new Swiper(".mySwiper1", {
         }
     });
 
-    //for recent courses carousel
-    var swiper = new Swiper(".mySwiper2", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop:true,
-      navigation: {
-        nextEl: ".custom-next2",
-        prevEl: ".custom-prev2",
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-        1280: {
-          slidesPerView: 4,
-        }
-        },
-        autoplay: {
-            delay: 3000,
-        }
-    });
+//for recent courses carousel
+var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop:true,
+    navigation: {
+    nextEl: ".custom-next2",
+    prevEl: ".custom-prev2",
+    },
+    breakpoints: {
+    640: {
+        slidesPerView: 2,
+    },
+    1024: {
+        slidesPerView: 3,
+    },
+    1280: {
+        slidesPerView: 4,
+    }
+    },
+    autoplay: {
+        delay: 3000,
+    }
+});
